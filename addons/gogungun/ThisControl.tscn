@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends TextureRect
+
+func _ready():
+#	set_drag_forwarding(get_parent().get_node(\"ThisControl\"))
+	set_drag_forwarding(get_parent().get_node(\"Target\"))
+#	set_drag_forwarding(self)
+	
+"
+
+[node name="ThisControl" type="TextureRect"]
+margin_left = 158.0
+margin_top = 207.0
+margin_right = 222.0
+margin_bottom = 271.0
+texture = ExtResource( 1 )
+script = SubResource( 2 )
