@@ -1,36 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://cell.png" type="Texture" id=1]
+[ext_resource path="res://entities/Card.gd" type="Script" id=2]
+[ext_resource path="res://entities/Cell.gd" type="Script" id=3]
+[ext_resource path="res://entities/Body.gd" type="Script" id=4]
 
-[sub_resource type="GDScript" id=1]
-script/source = "extends CenterContainer
-
-export(NodePath) var np_body 
-
-
-#need tooo....
-
-\"\"\"
-	
-	texture
-		white back
-		front text
-		middle star
-	
-	bing areas
-		
-		
-		
-	
-	
-	
-\"\"\"
-"
-
-[node name="CenterContainer" type="CenterContainer"]
+[node name="CardContainer" type="CenterContainer"]
 margin_right = 1024.0
-script = SubResource( 1 )
-np_body = NodePath("Card/Body")
+script = ExtResource( 2 )
 
 [node name="Card" type="VBoxContainer" parent="."]
 margin_left = 344.0
@@ -123,36 +100,42 @@ margin_right = 336.0
 margin_bottom = 404.0
 rect_pivot_offset = Vector2( -683, -234 )
 columns = 5
+script = ExtResource( 4 )
 
 [node name="B1" type="TextureRect" parent="Card/Body"]
 margin_right = 64.0
 margin_bottom = 64.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="I1" type="TextureRect" parent="Card/Body"]
 margin_left = 68.0
 margin_right = 132.0
 margin_bottom = 64.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="N1" type="TextureRect" parent="Card/Body"]
 margin_left = 136.0
 margin_right = 200.0
 margin_bottom = 64.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="G1" type="TextureRect" parent="Card/Body"]
 margin_left = 204.0
 margin_right = 268.0
 margin_bottom = 64.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="O1" type="TextureRect" parent="Card/Body"]
 margin_left = 272.0
 margin_right = 336.0
 margin_bottom = 64.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="B2" type="TextureRect" parent="Card/Body"]
 margin_top = 68.0
@@ -160,6 +143,7 @@ margin_right = 64.0
 margin_bottom = 132.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="I2" type="TextureRect" parent="Card/Body"]
 margin_left = 68.0
@@ -167,6 +151,7 @@ margin_top = 68.0
 margin_right = 132.0
 margin_bottom = 132.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="N2" type="TextureRect" parent="Card/Body"]
 margin_left = 136.0
@@ -174,6 +159,7 @@ margin_top = 68.0
 margin_right = 200.0
 margin_bottom = 132.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="G2" type="TextureRect" parent="Card/Body"]
 margin_left = 204.0
@@ -181,6 +167,7 @@ margin_top = 68.0
 margin_right = 268.0
 margin_bottom = 132.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="O2" type="TextureRect" parent="Card/Body"]
 margin_left = 272.0
@@ -188,6 +175,7 @@ margin_top = 68.0
 margin_right = 336.0
 margin_bottom = 132.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="B3" type="TextureRect" parent="Card/Body"]
 margin_top = 136.0
@@ -195,6 +183,7 @@ margin_right = 64.0
 margin_bottom = 200.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="I3" type="TextureRect" parent="Card/Body"]
 margin_left = 68.0
@@ -202,6 +191,7 @@ margin_top = 136.0
 margin_right = 132.0
 margin_bottom = 200.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="N3" type="TextureRect" parent="Card/Body"]
 modulate = Color( 0.780392, 0.772549, 0.270588, 1 )
@@ -210,6 +200,7 @@ margin_top = 136.0
 margin_right = 200.0
 margin_bottom = 200.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="G3" type="TextureRect" parent="Card/Body"]
 margin_left = 204.0
@@ -217,6 +208,7 @@ margin_top = 136.0
 margin_right = 268.0
 margin_bottom = 200.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="O3" type="TextureRect" parent="Card/Body"]
 margin_left = 272.0
@@ -224,6 +216,7 @@ margin_top = 136.0
 margin_right = 336.0
 margin_bottom = 200.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="B4" type="TextureRect" parent="Card/Body"]
 margin_top = 204.0
@@ -231,6 +224,7 @@ margin_right = 64.0
 margin_bottom = 268.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="I4" type="TextureRect" parent="Card/Body"]
 margin_left = 68.0
@@ -238,6 +232,7 @@ margin_top = 204.0
 margin_right = 132.0
 margin_bottom = 268.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="N4" type="TextureRect" parent="Card/Body"]
 margin_left = 136.0
@@ -245,6 +240,7 @@ margin_top = 204.0
 margin_right = 200.0
 margin_bottom = 268.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="G4" type="TextureRect" parent="Card/Body"]
 margin_left = 204.0
@@ -252,6 +248,7 @@ margin_top = 204.0
 margin_right = 268.0
 margin_bottom = 268.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="O4" type="TextureRect" parent="Card/Body"]
 margin_left = 272.0
@@ -259,6 +256,7 @@ margin_top = 204.0
 margin_right = 336.0
 margin_bottom = 268.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="B5" type="TextureRect" parent="Card/Body"]
 margin_top = 272.0
@@ -266,6 +264,7 @@ margin_right = 64.0
 margin_bottom = 336.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="I5" type="TextureRect" parent="Card/Body"]
 margin_left = 68.0
@@ -273,6 +272,7 @@ margin_top = 272.0
 margin_right = 132.0
 margin_bottom = 336.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="N5" type="TextureRect" parent="Card/Body"]
 margin_left = 136.0
@@ -280,6 +280,7 @@ margin_top = 272.0
 margin_right = 200.0
 margin_bottom = 336.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="G5" type="TextureRect" parent="Card/Body"]
 margin_left = 204.0
@@ -287,6 +288,7 @@ margin_top = 272.0
 margin_right = 268.0
 margin_bottom = 336.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="O5" type="TextureRect" parent="Card/Body"]
 margin_left = 272.0
@@ -294,3 +296,4 @@ margin_top = 272.0
 margin_right = 336.0
 margin_bottom = 336.0
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
