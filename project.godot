@@ -9,20 +9,20 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "GridContainer",
+"base": "Reference",
 "class": "CardBody",
 "language": "GDScript",
-"path": "res://entities/Body.gd"
+"path": "res://nodes/Body.gd"
 }, {
-"base": "TextureRect",
+"base": "Reference",
 "class": "CardCell",
 "language": "GDScript",
-"path": "res://entities/Cell.gd"
+"path": "res://nodes/Cell.gd"
 }, {
-"base": "CenterContainer",
+"base": "Reference",
 "class": "CardContainer",
 "language": "GDScript",
-"path": "res://entities/Card.gd"
+"path": "res://nodes/Card.gd"
 } ]
 _global_script_class_icons={
 "CardBody": "",
