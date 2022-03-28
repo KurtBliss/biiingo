@@ -20,75 +20,80 @@ margin_bottom = 64.0
 columns = 5
 
 [node name="B" type="TextureRect" parent="Card/Head"]
+self_modulate = Color( 0.529412, 0.419608, 0.698039, 1 )
 margin_right = 64.0
 margin_bottom = 64.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="Card/Head/B"]
-modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.937255, 1, 1 )
 text = "B"
 align = 1
 valign = 1
 uppercase = true
 
 [node name="I" type="TextureRect" parent="Card/Head"]
+self_modulate = Color( 0.529412, 0.419608, 0.698039, 1 )
 margin_left = 68.0
 margin_right = 132.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="Card/Head/I"]
-modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.937255, 1, 1 )
 text = "I"
 align = 1
 valign = 1
 uppercase = true
 
 [node name="N" type="TextureRect" parent="Card/Head"]
+self_modulate = Color( 0.529412, 0.419608, 0.698039, 1 )
 margin_left = 136.0
 margin_right = 200.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="Card/Head/N"]
-modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.937255, 1, 1 )
 text = "N"
 align = 1
 valign = 1
 uppercase = true
 
 [node name="G" type="TextureRect" parent="Card/Head"]
+self_modulate = Color( 0.529412, 0.419608, 0.698039, 1 )
 margin_left = 204.0
 margin_right = 268.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="Card/Head/G"]
-modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.937255, 1, 1 )
 text = "G"
 align = 1
 valign = 1
 uppercase = true
 
 [node name="O" type="TextureRect" parent="Card/Head"]
+self_modulate = Color( 0.529412, 0.419608, 0.698039, 1 )
 margin_left = 272.0
 margin_right = 336.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="Card/Head/O"]
-modulate = Color( 0, 0, 0, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_colors/font_color = Color( 1, 0.937255, 1, 1 )
 text = "O"
 align = 1
 valign = 1
@@ -103,73 +108,155 @@ columns = 5
 script = ExtResource( 3 )
 
 [node name="B1" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_right = 64.0
 margin_bottom = 64.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/B1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="I1" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 68.0
 margin_right = 132.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/I1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="N1" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 136.0
 margin_right = 200.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/N1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="G1" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 204.0
 margin_right = 268.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/G1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="O1" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 272.0
 margin_right = 336.0
 margin_bottom = 64.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/O1"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="B2" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_top = 68.0
 margin_right = 64.0
 margin_bottom = 132.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/B2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="I2" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 68.0
 margin_top = 68.0
 margin_right = 132.0
 margin_bottom = 132.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/I2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="N2" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 136.0
 margin_top = 68.0
 margin_right = 200.0
 margin_bottom = 132.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/N2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="G2" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 204.0
 margin_top = 68.0
 margin_right = 268.0
 margin_bottom = 132.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/G2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="O2" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 272.0
 margin_top = 68.0
 margin_right = 336.0
@@ -177,40 +264,84 @@ margin_bottom = 132.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/O2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="B3" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_top = 136.0
 margin_right = 64.0
 margin_bottom = 200.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/B3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="I3" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 68.0
 margin_top = 136.0
 margin_right = 132.0
 margin_bottom = 200.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/I3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="N3" type="TextureRect" parent="Card/Body"]
-modulate = Color( 0.780392, 0.772549, 0.270588, 1 )
+modulate = Color( 0.968627, 0.709804, 0.54902, 1 )
 margin_left = 136.0
 margin_top = 136.0
 margin_right = 200.0
 margin_bottom = 200.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/N3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "0"
+align = 1
+valign = 1
 
 [node name="G3" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 204.0
 margin_top = 136.0
 margin_right = 268.0
 margin_bottom = 200.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/G3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="O3" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 272.0
 margin_top = 136.0
 margin_right = 336.0
@@ -218,15 +349,33 @@ margin_bottom = 200.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/O3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="B4" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_top = 204.0
 margin_right = 64.0
 margin_bottom = 268.0
 rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/B4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
 
 [node name="I4" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 68.0
 margin_top = 204.0
 margin_right = 132.0
@@ -234,7 +383,16 @@ margin_bottom = 268.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/I4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="N4" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 136.0
 margin_top = 204.0
 margin_right = 200.0
@@ -242,7 +400,16 @@ margin_bottom = 268.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/N4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="G4" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 204.0
 margin_top = 204.0
 margin_right = 268.0
@@ -250,7 +417,16 @@ margin_bottom = 268.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/G4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="O4" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 272.0
 margin_top = 204.0
 margin_right = 336.0
@@ -258,7 +434,16 @@ margin_bottom = 268.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/O4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="B5" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_top = 272.0
 margin_right = 64.0
 margin_bottom = 336.0
@@ -266,7 +451,16 @@ rect_pivot_offset = Vector2( -250, 20 )
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/B5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="I5" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 68.0
 margin_top = 272.0
 margin_right = 132.0
@@ -274,7 +468,16 @@ margin_bottom = 336.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/I5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="N5" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 136.0
 margin_top = 272.0
 margin_right = 200.0
@@ -282,7 +485,16 @@ margin_bottom = 336.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/N5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="G5" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 204.0
 margin_top = 272.0
 margin_right = 268.0
@@ -290,10 +502,27 @@ margin_bottom = 336.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
 
+[node name="Label" type="Label" parent="Card/Body/G5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1
+
 [node name="O5" type="TextureRect" parent="Card/Body"]
+self_modulate = Color( 1, 0.937255, 1, 1 )
 margin_left = 272.0
 margin_top = 272.0
 margin_right = 336.0
 margin_bottom = 336.0
 texture = ExtResource( 4 )
 script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Card/Body/O5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_colors/font_color = Color( 0.278431, 0.117647, 0.298039, 1 )
+text = "1"
+align = 1
+valign = 1

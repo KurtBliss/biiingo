@@ -9,25 +9,43 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "GridContainer",
 "class": "CardBody",
 "language": "GDScript",
 "path": "res://nodes/Body.gd"
 }, {
-"base": "Reference",
+"base": "TextureRect",
 "class": "CardCell",
 "language": "GDScript",
 "path": "res://nodes/Cell.gd"
 }, {
-"base": "Reference",
+"base": "CenterContainer",
 "class": "CardContainer",
 "language": "GDScript",
 "path": "res://nodes/Card.gd"
+}, {
+"base": "Node",
+"class": "Main",
+"language": "GDScript",
+"path": "res://main.gd"
+}, {
+"base": "HBoxContainer",
+"class": "Numbers",
+"language": "GDScript",
+"path": "res://nodes/Numbers.gd"
+}, {
+"base": "Label",
+"class": "Seconds",
+"language": "GDScript",
+"path": "res://nodes/Seconds.gd"
 } ]
 _global_script_class_icons={
 "CardBody": "",
 "CardCell": "",
-"CardContainer": ""
+"CardContainer": "",
+"Main": "",
+"Numbers": "",
+"Seconds": ""
 }
 
 [application]
@@ -35,6 +53,15 @@ _global_script_class_icons={
 config/name="BiiiiinGO"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+ref="*res://ref.gd"
+
+[display]
+
+window/size/width=375
+window/size/height=667
 
 [editor_plugins]
 
@@ -59,4 +86,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
+environment/default_clear_color=Color( 0.278431, 0.117647, 0.298039, 1 )
 environment/default_environment="res://default_env.tres"
