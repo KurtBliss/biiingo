@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://nodes/Card.gd" type="Script" id=1]
-[ext_resource path="res://nodes/Cell.gd" type="Script" id=2]
-[ext_resource path="res://nodes/Body.gd" type="Script" id=3]
+[ext_resource path="res://entities/Card.gd" type="Script" id=1]
+[ext_resource path="res://entities/Cell.gd" type="Script" id=2]
+[ext_resource path="res://entities/Body.gd" type="Script" id=3]
 [ext_resource path="res://assets/cell.png" type="Texture" id=4]
 
 [node name="CardContainer" type="CenterContainer"]

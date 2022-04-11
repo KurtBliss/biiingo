@@ -9,35 +9,35 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "GridContainer",
+"base": "Reference",
 "class": "CardBody",
 "language": "GDScript",
-"path": "res://nodes/Body.gd"
+"path": "res://entities/Body.gd"
 }, {
-"base": "TextureRect",
+"base": "Reference",
 "class": "CardCell",
 "language": "GDScript",
-"path": "res://nodes/Cell.gd"
+"path": "res://entities/Cell.gd"
 }, {
-"base": "CenterContainer",
+"base": "Reference",
 "class": "CardContainer",
 "language": "GDScript",
-"path": "res://nodes/Card.gd"
+"path": "res://entities/Card.gd"
 }, {
 "base": "Node",
 "class": "Main",
 "language": "GDScript",
 "path": "res://main.gd"
 }, {
-"base": "HBoxContainer",
+"base": "Reference",
 "class": "Numbers",
 "language": "GDScript",
-"path": "res://nodes/Numbers.gd"
+"path": "res://entities/Numbers.gd"
 }, {
-"base": "Label",
+"base": "Reference",
 "class": "Seconds",
 "language": "GDScript",
-"path": "res://nodes/Seconds.gd"
+"path": "res://entities/Seconds.gd"
 } ]
 _global_script_class_icons={
 "CardBody": "",
@@ -56,7 +56,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-ref="*res://ref.gd"
+ref="*res://autoload/ref.gd"
 
 [display]
 
@@ -65,7 +65,7 @@ window/size/height=667
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/FileSystemView/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/godot-plugin-refresher/plugin.cfg", "res://addons/notes_tab/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/QuickPluginManager/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg" )
 
 [input]
 

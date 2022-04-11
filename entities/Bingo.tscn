@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://nodes/Card.tscn" type="PackedScene" id=1]
-[ext_resource path="res://nodes/Numbers.gd" type="Script" id=2]
+[ext_resource path="res://entities/Card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/Numbers.gd" type="Script" id=2]
 [ext_resource path="res://assets/ball.png" type="Texture" id=3]
-[ext_resource path="res://nodes/Seconds.gd" type="Script" id=4]
+[ext_resource path="res://entities/Seconds.gd" type="Script" id=4]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Next"
