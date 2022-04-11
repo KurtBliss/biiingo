@@ -26,26 +26,42 @@
     {
       "title": "Todo",
       "tasks": [
-        0
+        2,
+        1
       ]
     },
     {
       "title": "Doing",
       "tasks": [
-
+        3
       ]
     },
     {
       "title": "Done",
       "tasks": [
-
+        0
       ]
     }
   ],
   "tasks": [
     {
       "category": 0,
-      "title": "TODO: Fix",
+      "title": "TODO: Move get_number() to global node",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "TODO: Click on cells then compare if its a match",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "Create Menu Scene ...",
+      "details": "Only make start demo button, github link, devzze.com link, and exit."
+    },
+    {
+      "category": 0,
+      "title": "Turn Cells into Scenes that named automatically",
       "details": ""
     }
   ]
