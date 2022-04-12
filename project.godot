@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Reference",
+"class": "BrushPrefabs",
+"language": "GDScript",
+"path": "res://addons/Godoxel/BrushPrefabs.gd"
+}, {
+"base": "GridContainer",
 "class": "CardBody",
 "language": "GDScript",
 "path": "res://entities/Body.gd"
@@ -25,6 +30,96 @@ _global_script_classes=[ {
 "path": "res://entities/Card.gd"
 }, {
 "base": "Node",
+"class": "GEAction",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Action.gd"
+}, {
+"base": "Node",
+"class": "GEAnimation",
+"language": "GDScript",
+"path": "res://addons/Godoxel/Animation.gd"
+}, {
+"base": "GEAction",
+"class": "GEBrighten",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Brighten.gd"
+}, {
+"base": "GEAction",
+"class": "GEBrush",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Brush.gd"
+}, {
+"base": "GEAction",
+"class": "GEBucket",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Bucket.gd"
+}, {
+"base": "Control",
+"class": "GECanvas",
+"language": "GDScript",
+"path": "res://addons/Godoxel/Canvas.gd"
+}, {
+"base": "GEAction",
+"class": "GECut",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Cut.gd"
+}, {
+"base": "GEAction",
+"class": "GEDarken",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Darken.gd"
+}, {
+"base": "Control",
+"class": "GEDraggableWindow",
+"language": "GDScript",
+"path": "res://addons/Godoxel/dialogs/DraggableWindow.gd"
+}, {
+"base": "Control",
+"class": "GEFrame",
+"language": "GDScript",
+"path": "res://addons/Godoxel/Frame.gd"
+}, {
+"base": "Reference",
+"class": "GELayer",
+"language": "GDScript",
+"path": "res://addons/Godoxel/Layer.gd"
+}, {
+"base": "GEAction",
+"class": "GELine",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Line.gd"
+}, {
+"base": "GEAction",
+"class": "GEMultiLine",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/MultiLine.gd"
+}, {
+"base": "GEAction",
+"class": "GEPasteCut",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/PasteCut.gd"
+}, {
+"base": "GEAction",
+"class": "GEPencil",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Pencil.gd"
+}, {
+"base": "GEAction",
+"class": "GERainbow",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Rainbow.gd"
+}, {
+"base": "GEAction",
+"class": "GERect",
+"language": "GDScript",
+"path": "res://addons/Godoxel/actions/Rect.gd"
+}, {
+"base": "Node",
+"class": "GEUtils",
+"language": "GDScript",
+"path": "res://addons/Godoxel/Util.gd"
+}, {
+"base": "Node",
 "class": "Main",
 "language": "GDScript",
 "path": "res://main.gd"
@@ -34,18 +129,55 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://entities/Numbers.gd"
 }, {
-"base": "Reference",
+"base": "Label",
 "class": "Seconds",
 "language": "GDScript",
 "path": "res://entities/Seconds.gd"
+}, {
+"base": "Reference",
+"class": "SfxrGenerator",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrGenerator.gd"
+}, {
+"base": "Object",
+"class": "SfxrGlobals",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrGlobals.gd"
+}, {
+"base": "Object",
+"class": "SfxrStreamPlayerInterface",
+"language": "GDScript",
+"path": "res://addons/godot_sfxr/SfxrStreamPlayerInterface.gd"
 } ]
 _global_script_class_icons={
+"BrushPrefabs": "",
 "CardBody": "",
 "CardCell": "",
 "CardContainer": "",
+"GEAction": "",
+"GEAnimation": "",
+"GEBrighten": "",
+"GEBrush": "",
+"GEBucket": "",
+"GECanvas": "",
+"GECut": "",
+"GEDarken": "",
+"GEDraggableWindow": "",
+"GEFrame": "",
+"GELayer": "",
+"GELine": "",
+"GEMultiLine": "",
+"GEPasteCut": "",
+"GEPencil": "",
+"GERainbow": "",
+"GERect": "",
+"GEUtils": "",
 "Main": "",
 "Numbers": "",
-"Seconds": ""
+"Seconds": "",
+"SfxrGenerator": "",
+"SfxrGlobals": "",
+"SfxrStreamPlayerInterface": ""
 }
 
 [application]
@@ -65,7 +197,7 @@ window/size/height=667
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/QuickPluginManager/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/FileSystemView/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/fun_coding/plugin.cfg", "res://addons/gdndrop/plugin.cfg", "res://addons/godot_sfxr/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/notes_tab/plugin.cfg" )
 
 [input]
 

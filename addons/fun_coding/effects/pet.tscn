@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://addons/fun_coding/effects/pet.gd" type="Script" id=1]
+[ext_resource path="res://addons/fun_coding/effects/slime_pet.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 16, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 48, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 80, 0, 16, 13 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 16, 13 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Control" type="Control"]
+margin_left = 124.241
+margin_top = 312.112
+margin_right = 140.243
+margin_bottom = 326.114
+rect_scale = Vector2( 5, 5 )
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.505882 )
+frames = SubResource( 8 )
+frame = 2
+playing = true
+centered = false
+flip_h = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_Control_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Control_mouse_exited"]
