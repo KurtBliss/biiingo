@@ -197,7 +197,7 @@ window/size/height=667
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/FileSystemView/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/fun_coding/plugin.cfg", "res://addons/gdndrop/plugin.cfg", "res://addons/godot_sfxr/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/notes_tab/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/CodeSnippetPopup/plugin.cfg", "res://addons/FileSystemView/plugin.cfg", "res://addons/QuickPluginManager/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/fun_coding/plugin.cfg", "res://addons/godot_sfxr/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/node_referencer/plugin.cfg", "res://addons/notes_tab/plugin.cfg" )
 
 [input]
 
