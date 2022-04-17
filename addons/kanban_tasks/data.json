@@ -26,20 +26,21 @@
     {
       "title": "Todo",
       "tasks": [
-        2,
-        1
+        2
       ]
     },
     {
       "title": "Doing",
       "tasks": [
-        3
+        4
       ]
     },
     {
       "title": "Done",
       "tasks": [
-        0
+        0,
+        3,
+        1
       ]
     }
   ],
@@ -62,6 +63,11 @@
     {
       "category": 0,
       "title": "Turn Cells into Scenes that named automatically",
+      "details": ""
+    },
+    {
+      "category": 0,
+      "title": "Prevent duplicates stored for ref.numbers.numbers",
       "details": ""
     }
   ]

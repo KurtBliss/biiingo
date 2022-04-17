@@ -64,7 +64,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 10.0
 autostart = true
 
 [node name="Tick" type="Timer" parent="."]

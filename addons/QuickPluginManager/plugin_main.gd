@@ -19,7 +19,7 @@ extends EditorPlugin
 
 
 const PLUGIN_PATH = "res://addons"
-const POPUP_BUTTON_TEXT = "Manage Plugins"
+const POPUP_BUTTON_TEXT = "Plugins"
 const MENU_BUTTON_TOOLTIP = "Quickly enable/disable plugins"
 #if you change name of plugin from godot editor this variable also must changed to same
 const PLUGIN_SELF_NAME = "QuickPluginManager"
